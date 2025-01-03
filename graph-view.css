@@ -1,0 +1,18 @@
+/* Graph View Things */
+.graph-view.text {
+  font-family: "Source Code Pro";
+  font-size: 40px; }
+.graph-view.color-text {
+    color: #FFFFFF; }
+.graph-view.color-line {
+    color: #555555; }
+.graph-view.color-fill {
+    color: #00FF00; }
+.graph-view.color-fill-unresolved {
+    color: #00FF00; }
+.graph-view.color-fill-focused {
+    color: #00FF00; }
+.graph-view.color-fill-tag {
+    color: #55FF55; }
+.graph-view.color-fill-attachment {
+    color: #338833; }
