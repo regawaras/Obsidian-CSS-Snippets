@@ -43,6 +43,18 @@
   --scrollbar-thumb-bg: var(--color-darkgreen);	
 }
 
+.theme.dark {
+  --canvas-background: #00000000;
+  --canvas-card-label-color: #00FF00;
+  --canvas-dot-pattern: #00FF00;
+  --canvas-color-1: #00FF00;
+  --canvas-color-2: #00FF00;
+  --canvas-color-3: #00FF00;
+  --canvas-color-4: #00FF00;
+  --canvas-color-5: #00FF00;
+  --canvas-color-6: #00FF00;
+}
+
 .workspace-split.mod-root,
 .workspace-split.mod-root .view-content,
 .workspace-split.mod-root .view-header {
