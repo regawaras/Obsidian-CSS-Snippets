@@ -48,9 +48,11 @@
 .workspace-split.mod-root .view-header {
   background: transparent;
 }
-
 .workspace-leaf,
 .workspace-tab-header-container {
-  background: transparent;
+  background: transparent; 
 }
 
+.view-header-title-container:not(.mod-at-end):after {
+  background: transparent;
+}
