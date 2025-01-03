@@ -1,0 +1,339 @@
+
+/* 2025-01-03 Customs CSS Made by Regawa Rastrapranjala */
+
+body {
+  --font-default: "Arial";
+  --font-monospace-default: "Arial";
+  --font-size-default: 20px;
+  --file-line-width: 520px;
+
+  --icon-opacity: 100%;
+  --icon-color:  #906000;
+  --icon-color-hover: #FFCC00;
+  
+  --nav-item-color: #FFFFFF;
+  --nav-item-color-hover: #906000;
+  --nav-item-color-active: #FFCC00;
+  --nav-item-color-selected: #906000;
+  --nav-item-color-highlighted: #FFCC00;
+  --nav-item-background-hover: #151000;
+  --nav-item-background-active:	#151000;
+  --nav-item-background-selected: #FF0000;
+  --nav-indetation-guide-color:	#FF0000;
+  --nav-collapse-icon-color: #906000;
+  --nav-collapse-icon-color-collapsed: #FFFF00;
+  
+  /* --nav-item-white-space: wrap; */
+  --prompt-border-color: #906000;
+
+  --tab-background-active: #0F0F00;
+  --tab-text-color: #FF0000;
+  --tab-text-color-active: #FF0000;
+  --tab-text-color-focused: #906000;
+  --tab-text-color-focused-active: #906000;
+  --tab-text-color-focused-highlighted: #FF0000;
+  --tab-text-color-focused-active-current: #FFCC00;
+  --tab-container-background: #151000;
+  --tab-divider-color: #906000;
+  
+  --drag-ghost-background: #302000;
+  --blockquote-color: #FF0000;
+
+  
+  --titlebar-background: #0000FF;
+  --titlebar-background-focused: #151500;
+  --titlebar-text-color: #906000;
+  --titlebar-text-color-focused: #C09000;
+
+  --code-normal:	#FFFFFF;
+  --code-comment: var(--color-comment-blue);
+  --code-function: var(--color-light-blue);
+  --code-important: ;
+  --code-keyword: var(--color-orange);
+  --code-operator: #FFFFFF;
+  --code-property: var(--color-purple);
+  --code-punctuation:	#FFFFFF;
+  --code-string: var(--color-green);
+  --code-tag: var(--color-cyan);
+  --code-value: var(--color-pink);
+  
+}
+.nav-folder-title .nav-folder-title-content::before { 
+    content: '📂 '; }
+.nav-file-title .nav-file-title-content::before { 
+    content: '📝 '; }
+
+.theme-dark {
+	color: #FFFFFF;
+    accent: #FFFF00;
+  --accent-h: 40%;
+  --accent-s: 100%;
+  --accent-l: 28%;
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
+  --background-modifier-border: #403000;
+  --background-modifier-form-field: #000000;
+  --background-modifier-form-field-highlighted: #FF0000;
+  --background-modifier-box-shadow: #FF0000;
+  --background-modifier-success: #A4E7C3;	
+  --background-modifier-error: #FF0000;	
+  --background-modifier-error-hover: orange;	
+  --background-modifier-cover: #00000000;	
+  
+  /* Text */
+  --text-accent: #FF9900;
+  --text-accent-hover: #FFCC00;
+  --text-normal: #FFFFFF;	
+  --text-muted:#906000;	
+  --text-faint: #FF9900 ;	
+  --text-error: red;	
+  --text-error-hover: orange;	
+  --text-highlight-bg: #003300;
+  --text-highlight-bg-active: #113311;
+
+  --text-title-h1: #FFFF00;
+  --text-title-h2: #FFFF00;
+  --text-title-h3: #cccccc;
+  --text-title-h4: #cccccc;
+  --text-title-h5: #cccccc;
+
+  --link-external-color: #FF9900;
+  --link-external-color-hover: #FF9900, 0.6);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+
+  --link-color: #FFBB00;
+  --link-color-hover: #FFFF00, 0.6);
+  --link-unresolved-color: #DD9900;
+  --link-unresolved-opacity: 1;
+  --link-unresolved-filter: blur(0.75px);
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  
+  --table-border-color: #906000;
+  --table-header-background: #201000;
+  --table-header-background-hover: #151000;
+  --table-header-border-color: #906000;
+  --table-header-font: #FFFFFF;
+  --table-header-weight: bold;
+  --table-header-color: #906000;
+  --table-text-color: #FFFFFF;
+  --table-column-alt-background: ;
+  --table-row-background-hover: #302000 ;
+  --table-row-alt-background #00FF00 ;
+  --table-selection: #151000;
+  --table-selection-blend-mode: soft-light ;
+  --table-selection-border-color: #FFCC00;
+  --table-drag-handle-color: var(--color-orange);
+  --table-drag-handle-background: var(--background-primary) ;
+  --table-drag-handle-background-active:	var(--background-primary);
+
+  --tag-color: var(--color-cyan);
+  --tag-color-hover: var(--color-selected-blue);
+  --tag-background: var(--background-secondary); 
+  --tag-background-hover: var(--color-pink); 
+  --tag-border-color: var(--color-dark-blue);
+  --tag-border-color-hover: var(--color-dark-blue);
+
+  --text-selection: #554400;
+
+  /* BUTTONS | on todo settings, canvas side buttons */
+  --text-on-accent: #FFBB00;
+  --text-on-accent-hover: #FFFF00;
+  --interactive-normal: #221100;	
+  --interactive-hover: #332200;
+  --interactive-accent: #906000;	
+  --interactive-accent-hover: #554400;
+  --interactive-success: #FF0000;
+
+  /* Scrollbar */
+  --scrollbar-active-thumb-bg: #FFFF00;	
+  --scrollbar-bg: #FFFF00;	
+  --scrollbar-thumb-bg: #201500;
+}
+
+/* Graph */
+.graph-view-text {
+  font-family: "Source Code Pro";
+  font-size: 40px; }
+.graph-view.color-text {
+    color: #FFFFFF; }
+.graph-view.color-line {
+    color: #302000; }
+.graph-view.color-fill {
+    color: #00FF00; }
+.graph-view.color-fill-unresolved {
+    color: #555555; }
+.graph-view.color-fill-focused {
+    color: #FFFF00; }
+.graph-view.color-fill-tag {
+    color: #00FF00; }
+.graph-view.color-fill-attachment {
+    color: #FFFF00; }
+.graph-view.color-arrow {
+    color: #FFFF00; }
+}
+
+
+/** Navigation tabs **/
+.is-focused .workspace-tab-header.is-active {
+  opacity: 1;
+}
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: #906000;
+}
+
+/* Title Bar*/
+.titlebar {
+  background-color: #00FF00; }
+.titlebar-inner {
+  color: #FFFF00; }
+.titlebar-button {
+  opacity: 1; }
+.titlebar-button:hover {
+  color: #FFFF00; }
+.titlebar-button.mod-close:hover {
+  background-color: #00ff00;
+  color: var(--accent-2);
+}
+
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  border-radius: 8px;
+  margin: 14px 14px 14px 0px;
+  border: transparent;
+}
+.cm-s-obsidian span.cm-highlight, mark {
+  border-radius: 10px 10px;
+  padding: 3px 5px;
+  margin: 0 0px;
+  background-color: #333300;
+  color: var(--text-normal);
+}
+
+/* Status Bar */
+.status-bar {
+  border: 1px solid var(--highlight-high);
+  border-width: 1px 0px 1px 1px;
+  margin-bottom: 8px; }
+.status-bar {
+    color: #CC8800;
+    border-color: transparent;
+    margin: 0px 0px 0px 0px;
+    backdrop-filter: blur(5px) saturate(120%) !important;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 0px solid;
+    border-top: 1px solid;
+    height: 2.8%; }
+.status-bar:hover {
+  color: #FFFF00;
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent-active);
+    background-clip: padding-box;
+}
+/*Scrollbar Active*/
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
+    background: var(--text-accent);
+    background-clip: padding-box;
+}
+/*Active Line Highlight*/
+body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
+    background: #090900;
+    border-radius:  var(--radius-s);
+    border-image-slice: 1;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, transparent, #FFAA00, transparent);
+    border-bottom: 2px solid;
+}
+/*Hover Line Highlight*/
+.markdown-source-view.mod-cm6 .cm-line:hover {
+    background: #070700;
+    border-radius:  var(--radius-s);
+    border-image-slice: 1;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 2px solid;
+    opacity: 0.85;
+}
+/*Navigation Bottom Style*/
+.nav-header {
+    border-image-slice: 1;
+    border-top: 1px solid;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 1px solid;
+}
+/*Drop line Styled with spaces*/
+.nav-folder.mod-root .nav-folder>.nav-folder-children {
+    padding-left: 3px;
+    border-left: 2px outset #FF9000;
+}
+/*Nav File Active Stying*/
+.nav-file-title.is-active {
+    color: #FF9900;
+    border-image-slice: 1;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, transparent, #FF9900), transparent);
+    border-bottom: 2px solid;
+}
+/*Add Bottom Styling for Navigator*/
+body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-container.mod-global-search {
+    border-top: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 1px solid;
+}
+/*Styles Hover for Search Items */
+.tree-item-self.is-clickable:hover,.suggestion-item.is-selected:not(.mod-group):hover {
+    background: #000000;
+    color: #FFBB00;
+    border-image-slice: 1;
+    border-top: 1px solid;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 1px solid;
+}
+
+/*margin and gaps for sidebars tabs*/
+.mod-left-split .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tab-header-container-inner {
+  padding: 1px 15px 1px;
+  margin: 6px 0 0 0;
+  gap: 5px;
+}
+/*-----------Rounded corners for tables--------*/
+/*By @FireIsGood : https://forum.obsidian.md/t/adding-rounded-corners-to-markdown-tables-with-snippets-a-clean-solution/60551 */
+body:not(.mod-rtl) {
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  th:first-child {
+    border-top-left-radius: var(--table-border-radius);
+  }
+  th:last-child {
+    border-top-right-radius: var(--table-border-radius);
+  }
+  td, th {
+    border-width: 0px 0px 1px 1px;
+  }
+}
+
+/* table BEGIN*/
+table thead{
+	background-color: #403000;
+	font-weight: bold;
+}
+
+table tr:nth-child(),
+thead {
+    background-color: #151000;
+}
+body:not(.no-calendar) #calendar-container {
+  --color-background-weeknum: transparent;
+  --color-background-weekend: #100900;
+}
