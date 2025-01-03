@@ -1,0 +1,192 @@
+/* 2025-01-03 Customs CSS Made by Regawa Rastrapranjala */
+body {
+  --font-default: "Arial";
+  --font-monospace-default: "Arial";
+  --font-size-default: 20px;
+  --file-line-width: 520px;
+
+  --nav-item-color: #FfFFCC;
+  --nav-item-color-hover: #FFFF00;
+  --nav-item-color-selected: #FF0000;
+  --nav-item-white-space: wrap;
+
+  --icon-opacity: 100%;
+  --icon-color:  #00FF00;
+  --icon-color-hover: #FFFF00;
+
+}
+
+.theme-dark {
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
+  
+  --background-modifier-border: #000000;
+  --background-modifier-form-field: #000000;
+
+  --background-modifier-form-field-highlighted: #FF0000;
+  --background-modifier-box-shadow: #FF0000;
+  --background-modifier-success: #A4E7C3;	
+  --background-modifier-error: #FF0000;	
+  --background-modifier-error-hover: orange;	
+  --background-modifier-cover: #00000000;	
+  
+  /* Text */
+  --text-accent: #00FF00;
+  --text-accent-hover: #FFBB00;
+  --text-normal: #FFFFCC;	
+  --text-muted:#FFFFCC;	
+  --text-faint: #00FF00 ;	
+  --text-error: red;	
+  --text-error-hover: orange;	
+  --text-highlight-bg: #003300;
+  --text-highlight-bg-active: #113311;
+  --text-on-accent: #FFFFFF;
+  --text-on-accent-hover: #FF0000;
+
+  --link-external-color: #FFFFCC;
+  --link-external-color-hover: #FFFFCC, 0.6);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+
+  --link-color: #00FF00;
+  --link-color-hover: #FFFF00, 0.6);
+  --link-unresolved-color: #00FF00;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+
+  /* Mouse selection */
+  --text-selection: #003300;
+
+  /* BUTTONS | on todo settings, canvas side buttons */
+  --interactive-normal: #141114;	
+  --interactive-hover: #00FF00;
+  --interactive-accent: #00FF00;	
+  --interactive-accent-hover: #141114;
+  --interactive-success: #FF0000;	
+
+  /* Scrollbar */
+  --scrollbar-active-thumb-bg: #00FF00;	
+  --scrollbar-bg: #00FF00;	
+  --scrollbar-thumb-bg: #141114;	
+}
+
+/* G */
+.graph-view.text {
+  font-family: "Source Code Pro";
+  font-size: 40px; }
+.graph-view.color-text {
+    color: #FFFFFF; }
+.graph-view.color-line {
+    color: #555555; }
+.graph-view.color-fill {
+    color: #00FF00; }
+.graph-view.color-fill-unresolved {
+    color: #00FF00; }
+.graph-view.color-fill-focused {
+    color: #00FF00; }
+.graph-view.color-fill-tag {
+    color: #55FF55; }
+.graph-view.color-fill-attachment {
+    color: #338833; }
+
+/* FOLDER ICON | FILES NAVIGATION OR FILE EXPLORER*/
+.nav-file-title .nav-file-title-content:first-child::before { 
+    content: '📝 '; }
+.nav-folder-title .nav-folder-title-content::before { 
+    content: '📂 '; }
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  border-radius: 8px;
+  margin: 14px 14px 14px 0px;
+  border: transparent;
+}
+.cm-s-obsidian span.cm-highlight, mark {
+  border-radius: 10px 10px;
+  padding: 3px 5px;
+  margin: 0 0px;
+  background-color: #333300;
+  color: var(--text-normal);
+}
+.status-bar {
+  border: 1px solid var(--highlight-high);
+  border-width: 1px 0px 1px 1px;
+  margin-bottom: 8px;
+}
+
+.status-bar {
+    border-color: transparent;
+    margin: 0px 20px 12px 0px;
+    backdrop-filter: blur(5px) saturate(120%) !important;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 2px solid;
+    border-top: 1px solid;
+    height: 2.8%;
+}
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent-active);
+    background-clip: padding-box;
+}
+/*Scrollbar Active*/
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
+    background: var(--text-accent);
+    background-clip: padding-box;
+}
+/*Active Line Highlight*/
+body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active:not(:has(.mk-note-footer, .mk-floweditor-container)) {
+    background: #111100;
+    border-radius:  var(--radius-s);
+    border-image-slice: 1;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, transparent, #FFAA00, transparent);
+    border-bottom: 2px solid;
+}
+/*Hover Line Highlight*/
+.markdown-source-view.mod-cm6 .cm-line:hover {
+    background: #111100;
+    border-radius:  var(--radius-s);
+    border-image-slice: 1;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 2px solid;
+    opacity: 0.85;
+}
+/*Navigation Bottom Style*/
+.nav-header {
+    border-image-slice: 1;
+    border-top: 1px solid;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 1px solid;
+}
+/*Drop line Styled with spaces*/
+.nav-folder.mod-root .nav-folder>.nav-folder-children {
+    padding-left: 3px;
+    border-left: 2px outset #00ff00;
+}
+/*Nav File Active Stying*/
+.nav-file-title.is-active {
+    color: #FF9900;
+    border-image-slice: 1;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, transparent, #FF9900), transparent);
+    border-bottom: 2px solid;
+}
+/*Add Bottom Styling for Navigator*/
+body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-container.mod-global-search {
+    border-top: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 1px solid;
+}
+/*Styles Hover for Search Items */
+.tree-item-self.is-clickable:hover,.suggestion-item.is-selected:not(.mod-group):hover {
+    background: #000000;
+    color: #00FF00;
+    border-image-slice: 1;
+    border-top: 1px solid;
+    border-image-source: linear-gradient(to right, transparent, #FF9900, transparent);
+    border-bottom: 1px solid;
+}
