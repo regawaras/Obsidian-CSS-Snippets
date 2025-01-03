@@ -100,9 +100,9 @@ body {
 
   --link-color: #FFCC00;
   --link-color-hover: #906000;
-  --link-unresolved-color: #906000;
-  --link-unresolved-opacity: 1;
+  --link-unresolved-color: #FFAA00;
   --link-unresolved-filter: none;
+  --link-unresolved-opacity: 50%;
   --link-decoration: none;
   --link-decoration-hover: none;
   
@@ -134,11 +134,11 @@ body {
   --text-selection: #302000;
 
   /* BUTTONS | on todo settings, canvas side buttons */
-  --text-on-accent: #FFBB00;
+  --text-on-accent: #DDAA00;
   --text-on-accent-hover: #FFFF00;
-  --interactive-normal: #151000;	
+  --interactive-normal: #906000;	
   --interactive-hover: #906000;
-  --interactive-accent: #906000;	
+  --interactive-accent: #403000;	
   --interactive-accent-hover: #151000;
   --interactive-success: #FF0000;
 
@@ -147,6 +147,17 @@ body {
   --scrollbar-bg: #FFFF00;	
   --scrollbar-thumb-bg: #201500;
 }
+
+/*============ Inline title =================*/
+/* sourced from : Brutalism Obsidian Themes https://github.com/abrahambahez/Brutalism */
+.inline-title {
+    font-size: calc(3px + (72 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 1;
+  font-family: 'Archivo', 'Archivo SemiBold', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: -webkit-radial-gradient(#906000, #151000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+/*============ Inline title =================*/
 
 /*============ Graph =================*/
 .graph-view-text {
@@ -379,3 +390,4 @@ input.prompt-input {
     padding: 10px;
 }
 /*============ Prompt =================*/
+
