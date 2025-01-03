@@ -1,0 +1,56 @@
+.theme-light {
+  --background-primary: var(--color-);
+  --background-primary-alt: var(--color-);
+  
+  --background-secondary: var(--color-);
+  --background-secondary-alt: var(--color-);
+
+  --background-modifier-border: var(--color-);
+  --background-modifier-form-field: var(--color-);
+
+  --background-modifier-form-field-highlighted: var(--color-);
+  --background-modifier-box-shadow: var(--color-);
+
+  --background-modifier-success: #A4E7C3;	
+
+  --background-modifier-error: red;	
+  --background-modifier-error-hover: orange;	
+
+  --background-modifier-cover: var(--color-);	
+
+  --text-accent: var(--color-);
+  --text-accent-hover: var(--color-nearblack);
+  --text-normal: var(--color-nearblack);	
+  --text-muted: var(--color-green);	
+  --text-faint: var(--color-darkgreen);	
+  --text-error: red;	
+  --text-error-hover: orange;	
+
+  --text-highlight-bg: var(--color-green);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+
+  --text-selection: var(--color-green);	
+  --text-on-accent: var(--color-darkgreen);
+
+  --interactive-normal: var(--color-light);	
+  --interactive-hover: var(--color-darkgreen);
+  --interactive-accent: var(--color-green);	
+  --interactive-accent-hover: var(--color-nearblack);	
+  --interactive-success: #197300;
+
+  --scrollbar-active-thumb-bg: var(--color-green);	
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);	
+  --scrollbar-thumb-bg: var(--color-darkgreen);	
+}
+
+.workspace-split.mod-root,
+.workspace-split.mod-root .view-content,
+.workspace-split.mod-root .view-header {
+  background: transparent;
+}
+
+.workspace-leaf,
+.workspace-tab-header-container {
+  background: transparent;
+}
+
