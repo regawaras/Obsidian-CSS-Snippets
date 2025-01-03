@@ -1,0 +1,5 @@
+/* File & Folder Navigation */
+.nav-file-title .nav-file-title-content:first-child::before { 
+    content: '📝 '; }
+.nav-folder-title .nav-folder-title-content::before { 
+    content: '📂 '; }
